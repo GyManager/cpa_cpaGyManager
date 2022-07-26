@@ -13,6 +13,7 @@ public class RunTest {
     @BeforeClass
     public static void beforeTest(){
         System.out.println("BeforeClass");
+
     }
     @AfterClass
     public static void AfterClass(){
