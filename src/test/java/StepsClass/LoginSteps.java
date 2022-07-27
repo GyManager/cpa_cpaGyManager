@@ -5,6 +5,7 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.junit.Assert;
 
 
 import static GyManager.PageObjectChrome.*;
@@ -29,7 +30,12 @@ public class LoginSteps {
 
     @Then("ve el mensaje {string}")
     public void veElMensajeMensaje(String msj) {
-        System.out.println("Ingresa mensaje: " + msj);
+
+        espera();
+
+        String mensaje = PageObjectChrome.getWebElementoXPath("//*[@id=\"root\"]/div/h1").getText();
+        System.out.println("[INFO]Mensaje: "+mensaje);
+        Assert.assertEquals("No pudo ingresar al sitio",msj,mensaje);
         cerrar();
     }
 

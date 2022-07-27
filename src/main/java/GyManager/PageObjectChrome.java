@@ -24,7 +24,7 @@ public class PageObjectChrome {
 
     public static void espera() {
         try {
-            Thread.sleep(10000);
+            Thread.sleep(5000);
         } catch (Exception e) {
 
         }

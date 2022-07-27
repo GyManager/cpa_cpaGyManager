@@ -6,6 +6,8 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
+import static GyManager.PageObjectChrome.cerrar;
+
 
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features", plugin = {"pretty"})
@@ -18,5 +20,6 @@ public class RunTest {
     @AfterClass
     public static void AfterClass(){
         System.out.println("AfterClass");
+        cerrar();
     }
 }
