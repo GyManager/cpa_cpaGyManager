@@ -2,10 +2,11 @@ Feature: LogueoSitio
 
   Scenario Outline: Ingresar al sitio
     Given Ingresa a la url '<url>'
+    And ingresamos el '<usuario>' y '<pass>'
     When hace clic
     Then ve el mensaje '<mensaje>'
     #Test
     Examples:
-      | url         | mensaje |
-      | www.gym.com | Hola    |
+      | url                                   | usuario | pass |
+      | https://gymanager-test.herokuapp.com/ | Fer     | 123  |
 
