@@ -8,5 +8,5 @@ Feature: LogueoSitio
     #Test
     Examples:
       | url                                   | usuario | pass |
-      | https://gymanager-test.herokuapp.com/ | Fer     | 123  |
+      | https://gymanager-test.herokuapp.com/ | stanleycopeland@xinware.com     | 62346460  |
 

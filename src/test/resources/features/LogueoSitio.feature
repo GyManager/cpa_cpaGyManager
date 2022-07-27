@@ -7,6 +7,6 @@ Feature: LogueoSitio
     Then ve el mensaje '<mensaje>'
     #Test
     Examples:
-      | url                                   | usuario | pass |
-      | https://gymanager-test.herokuapp.com/ | Fer     | 123  |
+      | url                                   | usuario                     | pass     |
+      | https://gymanager-test.herokuapp.com/ | stanleycopeland@xinware.com | 62346460 |
 

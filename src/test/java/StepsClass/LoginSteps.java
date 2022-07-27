@@ -22,7 +22,9 @@ public class LoginSteps {
     @When("hace clic")
     public void haceClic() {
         espera();
-
+        //PageObjectChrome.getWebElementoXPath("//*[@id=\"root\"]/div/div[2]/div/div/div[2]/div[1]/form/button").click();
+        PageObjectChrome.getWebElementoId("password").submit();
+        espera();
     }
 
     @Then("ve el mensaje {string}")
@@ -33,8 +35,8 @@ public class LoginSteps {
 
     @And("ingresamos el {string} y {string}")
     public void ingresamosElUsuarioYPass(String usuario,String pass) {
-        PageObjectChrome.getWebElemento("email").sendKeys(usuario);
-        PageObjectChrome.getWebElemento("password").sendKeys(pass);
+        PageObjectChrome.getWebElementoId("email").sendKeys(usuario);
+        PageObjectChrome.getWebElementoId("password").sendKeys(pass);
 
     }
 }

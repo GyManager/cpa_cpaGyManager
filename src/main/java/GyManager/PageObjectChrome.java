@@ -10,26 +10,33 @@ import java.util.concurrent.TimeUnit;
 public class PageObjectChrome {
     private static WebDriver driver;
 
-    public static void setUP(String url){
-        System.setProperty("webdriver.chrome.driver","./src/main/chromedriver/chromedriver.exe");
+    public static void setUP(String url) {
+        System.setProperty("webdriver.chrome.driver", "./src/main/chromedriver/chromedriver.exe");
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://gymanager-test.herokuapp.com/");
     }
-    public static void cerrar(){
+
+    public static void cerrar() {
         System.out.println("Cierro");
         driver.close();
     }
-    public static void espera(){
-        try{
+
+    public static void espera() {
+        try {
             Thread.sleep(10000);
-        }catch (Exception e){
+        } catch (Exception e) {
 
         }
     }
 
-   public static WebElement getWebElemento(String id){
-       driver.findElement(By.id(id));
-       return driver.findElement(By.id(id));
-   }
+    public static WebElement getWebElementoId(String id) {
+
+        return driver.findElement(By.id(id));
+    }
+
+    public static WebElement getWebElementoXPath(String xpath) {
+
+        return driver.findElement(By.xpath(xpath));
+    }
 }
