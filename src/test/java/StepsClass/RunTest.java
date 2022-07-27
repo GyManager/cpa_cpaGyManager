@@ -6,7 +6,7 @@ import org.junit.AfterClass;
 import org.junit.BeforeClass;
 import org.junit.runner.RunWith;
 
-import static GyManager.PageObjectChrome.cerrar;
+import static GyManager.PageManager.PageObjectChrome.cerrar;
 
 
 @RunWith(CucumberWithSerenity.class)
