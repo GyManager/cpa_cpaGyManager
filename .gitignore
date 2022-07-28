@@ -1,1 +1,3 @@
-cpa_GyManager/target/*
+target/*
+.idea/*
+*.class
