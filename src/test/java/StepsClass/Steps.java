@@ -1,5 +1,6 @@
 package StepsClass;
 
+import GyManager.config.Properties;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -19,5 +20,6 @@ public class Steps {
         System.out.println("--------------------------------------------------------------");
         System.out.println("Ending - " + scenario.getName() + " Status - " + scenario.getStatus());
         System.out.println("--------------------------------------------------------------");
+        Properties.driver.quit();
     }
 }

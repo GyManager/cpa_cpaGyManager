@@ -1,5 +1,6 @@
 package StepsClass;
 
+import GyManager.config.Properties;
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.AfterClass;
@@ -20,6 +21,6 @@ public class RunTest {
     @AfterClass
     public static void AfterClass(){
         System.out.println("AfterClass");
-
+        Properties.driver.quit();
     }
 }
