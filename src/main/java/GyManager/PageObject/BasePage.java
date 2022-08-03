@@ -138,7 +138,7 @@ public class BasePage {
     //Detiene la ejecucion y no tiene en cuenta que cargue el WebDriver
     public void sleepWait() {
         try {
-            Thread.sleep(10000);
+            Thread.sleep(20000);
         } catch (Exception e) {
 
         }
