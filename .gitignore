@@ -1,4 +1,3 @@
-
-cpa_GyManager/target/failsafe-reports/LogueoSitio.txt
-*.xml
-target/cpa_GyManager-1.0-SNAPSHOT.jar
+target/*
+.idea/*
+*.class
